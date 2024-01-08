@@ -1,0 +1,42 @@
+
+
+<p>Mudeli hinnang on natuke laiapõhjalisem ja mitmetahulisem, kui pelgalt kohustuste osakaal bilansis.  Samas, kuna see võtab arvesse mitmeid aspete, siis on kergem hinnata, kas kohustuste osa on võimalik suurendada või mitte.</p>
+<p>Siia kuvada mingi praegune arusaam kohustustest, mudeli tulemusena.</p>
+
+<div class="clck">
+<!--p-->
+<ngx-gauge 
+size=80
+[type]="gaugeType" 
+[value]="gaugeValue" 
+[label]="gaugeLabel" 
+[append]="gaugeAppendText"
+[thresholds]="thresholdConfig"
+[size]="gaugeSize"
+[cap]="gaugeCap"
+[thick]="gaugeThick"
+[foregroundColor]="gaugeForegroundColor"
+[backgroundColor]="gaugeBackgroundColor"
+[duration]="gaugeDuration"
+[animate]="gaugeAnimate"
+[aria-label]="gaugeAriaLabel"
+
+
+>
+</ngx-gauge>
+<input type="range" min="1" max="100"   min="0" max="100" [(ngModel)]="currentValue" step="1" class="slider"  (input)="gaugeChange($event)">
+<!--/p-->
+
+</div>
+
+
+<!--div class="clck2">
+{{currentValue}}
+
+</div-->
+
+<div class="clck2">
+
+  Ole täitsa, vali endale nüüd sobiv väärtus, millist kohustuste seisu sooviksid näha. Liiguta alumist sliderit ja lase unistustel lennata. Samas pea silmas, et kergem on kohustusi suurendada (kui keegi annab laenu veel), mitte vähendada (niisama mahakirjutamine ei ole õige).
+
+</div>
